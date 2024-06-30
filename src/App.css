@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+}
+.Ar {
+  direction: rtl;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+.MainNav {
+  background: url(../public/pics/image.png) no-repeat 50% 30%;
+  background-size: cover;
+  min-height: 35vw;
+  max-height: fit-content;
+  padding: 0 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 6vw;
+}
+.MainNavBarClass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 25px 50px;
+  position: relative;
+}
+.NavBarRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.faBars {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+/* side Bar Styling */
+.MainNavBarClass .active {
+  position: absolute;
+  width: 80vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background-color: rgba(7, 7, 7, 0.597);
+  z-index: 4;
+}
+.SideBar {
+  display: flex !important;
+  margin-top: 15vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.ClosingSideBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 20vw;
+  z-index: 5;
+  background-color: rgba(166, 143, 108, 0.729);
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .NavBarRight a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .NavBarRight {
+    display: none;
+  }
+  .faBars {
+    display: block;
+  }
+  .MainNavBarClass .active {
+    width: 70vw;
+  }
+  .ClosingSideBar {
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .MainNavBarClass .active {
+    display: none !important;
+  }
+  .ClosingSideBar {
+    display: none !important;
+  }
+}
+hr {
+  width: calc(100vw - 100px);
+  background-color: rgb(100, 100, 100);
+  height: 3px;
+  margin: auto;
+}
+
+.TitleExplore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+.TitleExplore h3 {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+.TitleExplore a {
+  color: black;
+  background-color: #ffb870;
+  border-radius: 25px;
+  padding: 20px;
+  font-size: 18px;
+}
+
+/* sliderStart */
+.MainContentSlider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 50px;
+}
+.MainContentSlider img {
+  border-radius: 20px 20px 0 0;
+}
+.OurShopAr h3 {
+  position: relative;
+}
+.OurShopAr h3:before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  bottom: -10px;
+  background-color: #ffb870;
+}
+.MainContentSlider .OurShopClass h3 {
+  color: #000 !important;
+  text-shadow: 2px 2px 4px black;
+  font-size: 28px;
+}
+.MainContentSlider .underSlidesContent {
+  background-color: black;
+  color: white !important;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 30px;
+  border-radius: 0 0 20px 20px;
+  align-items: center;
+  margin-top: -10px;
+}
+.MainContentSlider .underSlidesContent h3 {
+  color: white !important;
+  font-size: 28px;
+  padding-bottom: 5px;
+}
+.MainContentSlider .underSlidesContent a {
+  border: 1px solid white;
+  padding: 10px;
+  font-size: 12px;
+}
+@media screen and (max-width: 768px) {
+  .MainContentSlider .OurShopClass h3 {
+    font-size: 18px;
+  }
+  .MainContentSlider .underSlidesContent {
+    padding: 20px 10px;
+  }
+  .MainContentSlider .underSlidesContent h3,
+  h4 {
+    font-size: 12px;
+  }
+  .MainContentSlider .underSlidesContent a {
+    padding: 5px;
+    font-size: 10px;
+  }
+}

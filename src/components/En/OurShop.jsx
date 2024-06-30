@@ -1,0 +1,74 @@
+import React, { useEffect, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+
+// import required modules
+import { Pagination } from "swiper/modules";
+import axios from "axios";
+
+const OurShop = () => {
+  const [projects, setProject] = useState([]);
+
+  useEffect(() => {
+    axios.get("data.json").then((res) => {
+      console.log(res);
+      setProject(res.data.projects);
+    });
+  }, []);
+
+  return (
+    <>
+      <div className="MainContentSlider">
+        <div className="OurShopClass">
+          <h3>OUR SHOP</h3>
+        </div>
+        <div>
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={60}
+            freeMode={true}
+            pagination={{
+              clickable: true,
+            }}
+            breakpoints={{
+              100: {
+                width: 600,
+                slidesPerView: 3,
+              },
+              768: {
+                width: 768,
+                slidesPerView: 2,
+              },
+            }}
+            modules={[Pagination]}
+            className="mySwiper wow fadeInUp"
+            data-wow-duration="2s"
+            data-wow-delay="0.5s"
+          >
+            {projects.slice(0, 4).map((projects) => (
+              <SwiperSlide key={projects.id}>
+                <>
+                  <img width="100%" src={projects.photo} alt="Not_Found" />
+                  <div className="underSlidesContent">
+                    <div>
+                      <h3>{projects.titleEn}</h3>
+                      <h4>{projects.salary}</h4>
+                    </div>
+                    <div>
+                      <a href="/">VIEW</a>
+                    </div>
+                  </div>
+                </>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default OurShop;

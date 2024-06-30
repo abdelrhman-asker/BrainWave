@@ -1,0 +1,43 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "titleEn": "Camera 1",
+      "titleAr": "كاميرا 1",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto facere vero consectetur itaque molestiae perspiciatis porro alias iure exercitationem quibusdam?",
+      "photo": "pics/Slice 1.png",
+      "salary": "$97.70"
+    },
+    {
+      "id": "2",
+      "titleEn": "Camera 2",
+      "titleAr": "كاميرا 2",
+      "photo": "pics/Slice 2.png",
+      "salary": "$97.70"
+    },
+    {
+      "id": "3",
+      "titleEn": "Camera 3",
+      "titleAr": "كاميرا 3",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto facere vero consectetur itaque molestiae perspiciatis porro alias iure exercitationem quibusdam?",
+      "photo": "pics/Slice 3.png",
+      "salary": "$97.70"
+    },
+    {
+      "id": "4",
+      "titleEn": "Camera 4",
+      "titleAr": "كاميرا 4",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto facere vero consectetur itaque molestiae perspiciatis porro alias iure exercitationem quibusdam?",
+      "photo": "pics/Slice 4.png",
+      "salary": "$97.70"
+    },
+    {
+      "id": "5",
+      "titleEn": "Camera 5",
+      "titleAr": "كاميرا 5",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto facere vero consectetur itaque molestiae perspiciatis porro alias iure exercitationem quibusdam?",
+      "photo": "pics/Slice 5.png",
+      "salary": "$97.70"
+    }
+  ]
+}
