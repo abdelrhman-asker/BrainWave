@@ -8,6 +8,7 @@ import "swiper/css";
 // import required modules
 import { Pagination } from "swiper/modules";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const OurShop = () => {
   const [projects, setProject] = useState([]);
@@ -35,6 +36,10 @@ const OurShop = () => {
             }}
             breakpoints={{
               200: {
+                width: 130,
+                slidesPerView: 1,
+              },
+              500: {
                 width: 200,
                 slidesPerView: 1,
               },
@@ -55,7 +60,7 @@ const OurShop = () => {
                       <h4>{projects.salary}</h4>
                     </div>
                     <div>
-                      <a href="/">VIEW</a>
+                      <Link to="#">VIEW</Link>
                     </div>
                   </div>
                 </>

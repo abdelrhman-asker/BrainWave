@@ -17,10 +17,10 @@ const NavBar = () => {
             <h2>Brainwave.io</h2>
           </div>
           <div className="NavBarRight">
-            <Link to="/">Our-shop</Link>
-            <Link to="/">About us</Link>
-            <Link to="/">News</Link>
-            <Link to="/">Contact us</Link>
+            <Link to="#">Our-shop</Link>
+            <Link to="#">About us</Link>
+            <Link to="#">News</Link>
+            <Link to="#">Contact us</Link>
             <Link to="/Ar">عربي</Link>
           </div>
           <div className="faBars" onClick={openSideBar}>
@@ -31,10 +31,10 @@ const NavBar = () => {
             style={{ display: sideBar === "disable" ? "none" : "block" }}
           >
             <div className="NavBarRight SideBar">
-              <Link to="/">Our-shop</Link>
-              <Link to="/">About us</Link>
-              <Link to="/">News</Link>
-              <Link to="/">Contact us</Link>
+              <Link to="#">Our-shop</Link>
+              <Link to="#">About us</Link>
+              <Link to="#">News</Link>
+              <Link to="#">Contact us</Link>
               <Link to="/Ar">عربي</Link>
             </div>
           </div>
@@ -51,7 +51,7 @@ const NavBar = () => {
           <h3>Be Creative!</h3>
         </div>
         <div>
-          <Link to="/">Explore More</Link>
+          <Link to="#">Explore More</Link>
         </div>
       </div>
     </div>

@@ -17,10 +17,10 @@ const NavBarAr = () => {
             <h2>Brainwave.io</h2>
           </div>
           <div className="NavBarRight">
-            <Link to="/">المتجر</Link>
-            <Link to="/">نبذة عننا</Link>
-            <Link to="/">الأخبار</Link>
-            <Link to="/">تواصل معنا</Link>
+            <Link to="#">المتجر</Link>
+            <Link to="#">نبذة عننا</Link>
+            <Link to="#">الأخبار</Link>
+            <Link to="#">تواصل معنا</Link>
             <Link to="/En">EN</Link>
           </div>
           <div className="faBars" onClick={openSideBar}>
@@ -34,10 +34,10 @@ const NavBarAr = () => {
             }}
           >
             <div className="NavBarRight SideBar">
-              <Link to="/">المتجر</Link>
-              <Link to="/">نبذة عننا</Link>
-              <Link to="/">الأخبار</Link>
-              <Link to="/">تواصل معنا</Link>
+              <Link to="#">المتجر</Link>
+              <Link to="#">نبذة عننا</Link>
+              <Link to="#">الأخبار</Link>
+              <Link to="#">تواصل معنا</Link>
               <Link to="/En">EN</Link>
             </div>
           </div>
@@ -54,7 +54,7 @@ const NavBarAr = () => {
           <h3>كن مبدعا!</h3>
         </div>
         <div>
-          <Link to="/">عرض المزيد</Link>
+          <Link to="#">عرض المزيد</Link>
         </div>
       </div>
     </div>
