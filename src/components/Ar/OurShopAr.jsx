@@ -36,6 +36,10 @@ const OurShopAr = () => {
             }}
             breakpoints={{
               200: {
+                width: 130,
+                slidesPerView: 1,
+              },
+              500: {
                 width: 200,
                 slidesPerView: 1,
               },

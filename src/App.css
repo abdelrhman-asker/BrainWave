@@ -132,7 +132,7 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  margin-top: 50px;
+  margin: 50px 0;
 }
 .TitleExplore h3 {
   color: white;
