@@ -5,10 +5,12 @@
   text-decoration: none;
   color: white;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 .Ar {
   direction: rtl;
 }
+
 body {
   width: 100vw;
   overflow-x: hidden;
@@ -25,12 +27,16 @@ body {
   gap: 6vw;
 }
 .MainNavBarClass {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
   padding: 25px 50px;
-  position: relative;
+  z-index: 4;
 }
 .NavBarRight {
   display: flex;
@@ -122,8 +128,9 @@ body {
 hr {
   width: calc(100vw - 100px);
   background-color: rgb(100, 100, 100);
+  border-color: rgb(100, 100, 100);
   height: 3px;
-  margin: auto;
+  margin: 10vh auto;
 }
 
 .TitleExplore {
@@ -164,6 +171,15 @@ hr {
 .OurShopAr h3:before {
   content: "";
   position: absolute;
+  width: 20px;
+  height: 3px;
+  bottom: -10px;
+  background-color: #ffb870;
+}
+.OurShopAr h3:hover:before {
+  content: "";
+  transition: 2s;
+  position: absolute;
   width: 80px;
   height: 3px;
   bottom: -10px;
@@ -171,7 +187,7 @@ hr {
 }
 .MainContentSlider .OurShopClass h3 {
   color: #000 !important;
-  text-shadow: 2px 2px 4px black;
+  text-shadow: 2px 2px 2px black;
   font-size: 28px;
 }
 .MainContentSlider .underSlidesContent {

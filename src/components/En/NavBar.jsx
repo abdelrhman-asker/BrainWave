@@ -13,9 +13,11 @@ const NavBar = () => {
     <div className="MainNav">
       <div>
         <div className="MainNavBarClass">
-          <div className="NavBarLeft">
-            <h2>Brainwave.io</h2>
-          </div>
+          <h3 className="NavBarLeft">
+            <Link to="#" onClick={() => window.scroll(0, 0)}>
+              Brainwave.io
+            </Link>
+          </h3>
           <div className="NavBarRight">
             <Link to="#">Our-shop</Link>
             <Link to="#">About us</Link>
