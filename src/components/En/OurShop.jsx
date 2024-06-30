@@ -34,7 +34,7 @@ const OurShop = () => {
             pagination={{
               clickable: true,
             }}
-            breakpoints={{
+           breakpoints={{
               200: {
                 width: 130,
                 slidesPerView: 1,
