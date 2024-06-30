@@ -27,8 +27,11 @@ const NavBarAr = () => {
             <FaBars />
           </div>
           <div
-            className={sideBar}
-            style={{ display: sideBar === "disable" ? "none" : "block" }}
+            className={sideBar + "Ar"}
+            style={{
+              display: sideBar === "disable" ? "none" : "block",
+              left: "0",
+            }}
           >
             <div className="NavBarRight SideBar">
               <Link to="/">المتجر</Link>
@@ -39,7 +42,7 @@ const NavBarAr = () => {
             </div>
           </div>
           <div
-            className="ClosingSideBar"
+            className="ClosingSideBarAr"
             onClick={openSideBar}
             style={{ display: sideBar === "disable" ? "none" : "block" }}
           ></div>

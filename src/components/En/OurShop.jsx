@@ -34,9 +34,9 @@ const OurShop = () => {
               clickable: true,
             }}
             breakpoints={{
-              100: {
-                width: 600,
-                slidesPerView: 3,
+              200: {
+                width: 200,
+                slidesPerView: 1,
               },
               768: {
                 width: 768,
@@ -44,9 +44,6 @@ const OurShop = () => {
               },
             }}
             modules={[Pagination]}
-            className="mySwiper wow fadeInUp"
-            data-wow-duration="2s"
-            data-wow-delay="0.5s"
           >
             {projects.slice(0, 4).map((projects) => (
               <SwiperSlide key={projects.id}>
