@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
+import { MdClose } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const NavBarAr = () => {
@@ -8,7 +9,9 @@ const NavBarAr = () => {
     sideBar === "disable" ? setSideBar("active") : setSideBar("disable");
     console.log(sideBar);
   };
-
+  sideBar === "disable"
+    ? (document.getElementsByTagName("body")[0].className = "overdisabled")
+    : (document.getElementsByTagName("body")[0].className = "overActive");
   return (
     <div className="MainNav">
       <div>
@@ -26,7 +29,7 @@ const NavBarAr = () => {
             <Link to="/En">EN</Link>
           </div>
           <div className="faBars" onClick={openSideBar}>
-            <FaBars />
+            {sideBar === "disable" ? <FaBars /> : <MdClose />}
           </div>
           <div
             className={sideBar + "Ar"}
@@ -44,10 +47,14 @@ const NavBarAr = () => {
             </div>
           </div>
           <div
-            className="ClosingSideBarAr"
+            className=" ClosingSideBarAr"
             onClick={openSideBar}
-            style={{ display: sideBar === "disable" ? "none" : "block" }}
-          ></div>
+            style={{ display: sideBar === "disable" ? "none" : "flex" }}
+          >
+            <span>
+              غلق <MdClose />
+            </span>
+          </div>
         </div>
         <hr />
       </div>

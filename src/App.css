@@ -7,6 +7,7 @@
   font-family: sans-serif;
   scroll-behavior: smooth;
 }
+/* for arabic transition */
 .Ar {
   direction: rtl;
 }
@@ -14,6 +15,11 @@
 body {
   width: 100vw;
   overflow-x: hidden;
+}
+/*  tp prevent scrolling when side bar is active */
+.overActive {
+  height: 100vh;
+  overflow: hidden;
 }
 .MainNav {
   position: relative;
@@ -95,23 +101,35 @@ body {
   align-items: center;
   gap: 50px;
 }
-.ClosingSideBarAr {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 20vw;
-  z-index: 5;
-  background-color: rgba(166, 143, 108, 0.729);
-}
+.ClosingSideBarAr,
 .ClosingSideBar {
   position: fixed;
   top: 0;
-  left: 0;
   bottom: 0;
   width: 20vw;
   z-index: 5;
   background-color: rgba(166, 143, 108, 0.729);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ClosingSideBarAr span,
+.ClosingSideBar span {
+  rotate: -90deg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  font-size: 32px;
+}
+.ClosingSideBarAr span {
+  rotate: 90deg;
+}
+.ClosingSideBarAr {
+  right: 0;
+}
+.ClosingSideBar {
+  left: 0;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .NavBarRight a {
@@ -125,18 +143,23 @@ body {
   .faBars {
     display: block;
   }
-  .MainNavBarClass .active {
+  .MainNavBarClass .active,
+  .activeAr {
     width: 70vw;
   }
-  .ClosingSideBar {
+  .ClosingSideBar,
+  .ClosingSideBarAr {
     width: 30vw;
   }
 }
 @media screen and (min-width: 768px) {
-  .MainNavBarClass .active {
+  .MainNavBarClass .active,
+  .activeAr {
     display: none !important;
   }
-  .ClosingSideBar {
+
+  .ClosingSideBar,
+  .ClosingSideBarAr {
     display: none !important;
   }
 }
